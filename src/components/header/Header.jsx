@@ -8,13 +8,10 @@ const Header = () => {
 
 <Nav defaultActiveKey="/home" as="ul">
       <Nav.Item as="li">
-        <Nav.Link className="nav-bar" href="/home">Active</Nav.Link>
+        <Nav.Link className="nav-bar" href="/home">Login</Nav.Link>
       </Nav.Item>
       <Nav.Item as="li">
-        <Nav.Link className="nav-bar" eventKey="link-1">Link</Nav.Link>
-      </Nav.Item>
-      <Nav.Item as="li">
-        <Nav.Link className="nav-bar" eventKey="link-2">Link</Nav.Link>
+        <Nav.Link className="nav-bar" eventKey="link-1">Sign-up</Nav.Link>
       </Nav.Item>
     </Nav>
 
