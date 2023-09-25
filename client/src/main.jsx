@@ -15,6 +15,7 @@ import Mocktails from './pages/Mocktails';
 import Drinks from './pages/Drinks';
 import Spirits from './pages/Spirits';
 import Beer from './pages/Beer';
+import ChileLimeSublime from './pages/ChileLimeSublime';
 
 const router = createBrowserRouter([
   {
@@ -64,7 +65,12 @@ const router = createBrowserRouter([
       }, {
         path: '/thoughts/:thoughtId',
         element: <SingleThought />
-      }
+      },
+
+      {
+        path: '/chile-lime-sublime',
+        element: <ChileLimeSublime />
+      },
     ]
   }
 ])

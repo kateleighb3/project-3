@@ -23,7 +23,7 @@ const Mocktails = () => {
         <div className='ml-4 mr-4 grid grid-cols-4 gap-12'>
             {/* <div className="float-left w-1/5 m-3.5 p-4 backdrop-blur border-4 border-white"> */}
                 {/* <h4 className="text-white bg-green-950 text-4xl font-yellow text-center">Drink Name</h4> */}
-                <MocktailItem img={chile} title="Chile Lime Sublime" recipe={`beer`} />
+                <MocktailItem img={chile} title="Chile Lime Sublime" recipe={`chile-lime-sublime`} />
                 <MocktailItem img={drank} title="Zombie" />
                 <MocktailItem img={pina} title="Pina Colada" />
                 <MocktailItem img={cherry} title="Cherry Lemon Bomb" />
