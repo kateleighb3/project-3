@@ -6,7 +6,7 @@ import mai from '../assets/maitai.jpg';
 import pina from '../assets/pinacolada.jpg';
 import cherry from '../assets/cherry-lemon-bomb.jpg';
 import minty from '../assets/minty-mango-split.jpg';
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import MocktailItem from '../components/MocktailItem';
 import { backgroundImage } from '../utils/constants';
 import Modal from '../components/Modal';
@@ -15,7 +15,7 @@ import Modal from '../components/Modal';
 
 const Mocktails = () => {
 
-    const [openModal, setOpenModal] = useState(false);
+    // const [openModal, setOpenModal] = useState(false);
 
     return (
     <div className={`bg-cover bg-fixed bg-[url("./assets/${backgroundImage}")] relative min-h-screen w-full m-0 p-0`}>
@@ -35,9 +35,10 @@ const Mocktails = () => {
             </div>
 </div>
 
-<div>
+{/* <div>
+<button onClick={() => setOpenModal(true)}>Recipe</button>
 <Modal open = {openModal} />
-</div>
+</div> */}
    
 
 </div>
