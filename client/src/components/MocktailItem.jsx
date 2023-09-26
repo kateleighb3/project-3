@@ -27,7 +27,7 @@ const MocktailItem = ({img, title, recipe}) => {
                 </h3> */}
                 </div>
 
-                <div className='flip-card-back'>
+                <div className='flip-card-back flex flex-col justify-center'>
                     <h3>{title}</h3>
                     <Link to={`../${recipe}`}>
                     <button className= 'modalBtn border-2 border-white m-4 p-2'>Recipe</button>

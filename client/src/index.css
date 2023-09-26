@@ -246,7 +246,7 @@ h1{
 }
 
 .overlay {
- width: 50%;
+ width: 45%;
 }
 
 .drinkContainer{
@@ -254,7 +254,6 @@ h1{
   width: 100%;
   /* transform: translate(-50%, -50%); */
   display: flex;
-  background-color: white;
   box-shadow: 0px 0px 10px 0 px rgba(0, 0, 0, 0.75);
 }
 

@@ -6,22 +6,23 @@ import ThoughtForm from '../components/ThoughtForm';
 import ThoughtList from '../components/ThoughtList';
 import { QUERY_THOUGHTS } from '../utils/queries';
 import { useQuery } from '@apollo/client';
+import pineapple from '../assets/pineapple-shake.jpg';
 
 
 
 
-const ChileLimeSublime = () => {
+const PineappleShake = () => {
 
     const { loading, data } = useQuery(QUERY_THOUGHTS);
     const thoughts = data?.thoughts || [];
 
-    const ingredients = ' 1 tablespoon pink peppercorns\n1 lime\n2 dried chiles de arbol, crushed\n3 cups fresh pineapple juice\n1/2 cup sugar\npinch of sea salt\n9 cups club soda, divided';
+    const ingredients = '1 1/2 cups Fresh Pineapple\n2/3 cup granulated sugar\n2/3 cup water\ntiny pinch of salt\n1 whole egg\n1 spoonful cream\n 2oz cracked ice\nSoda water to fill';
 
     const ingredientsList = ingredients.split('\n').map((ingredient, index) => (
         <li key={index}>{ingredient}</li>
       ));
 
-      const directions = 'Crush peppercorns with a mortar and pestle or the side of a chef’s knife.\n Remove zest from lime in wide strips with a vegetable peeler. Place in a bowl. Add peppercorns, whole chiles de árbol, pineapple juice, sugar, and salt and stir until most of sugar is dissolved. Transfer to a 1-qt. jar or an airtight container. Cover and chill 8–12 hours. \n Strain juice through a fine-mesh sieve into another medium bowl (you should have about 3 cups); discard solids.\nTo make 1 drink, mix ¼ cup juice with ¾ cup club soda in a measuring glass; taste and add more juice if you want it sweeter. Pour into an ice-filled glass. Garnish with a lime wedge and crushed chile de árbol.\nDo Ahead: Juice can be infused and strained 3 days ahead. Cover and chill.';
+      const directions = 'Make the pineapple syrup first:\nCut the rind off the pineapple and cut into 1/2 inch pieces\nPour the sugar onto the pineapple and stir to coat the pineapple\nLet the sugar and pineapple rest for at least 3 hours (or up to overnight) until the sugar draws out liquid from the fruit and looks syrupy\nAdd the water and heat gently over the stove just until all the sugar is finished dissolving\n Pour through a strainer into a jar for storage\nThe Pineapple Shake:\nIn a cocktail shaker with 2 large cubes of ice shake the egg, cream, and 2 oz pineapple syrup until frothy\nAdd to a glass and fill with soda water\nIf desired the cream can be added as a float at the end\n Add pineapple slice';
 
       const directionsList = directions.split('\n').map((direction, index) => (
         <li key={index}>{direction}</li>
@@ -35,8 +36,8 @@ const ChileLimeSublime = () => {
        </div> */}
        <div className = 'flex flex-row justify-center'>
         <DrinkItem 
-            img= {chile}
-            name= 'Chile Lime Sublime'
+            img= {pineapple}
+            name= 'Pineapple Shake'
             ingredients= {<ul className= 'list-disc'>{ingredientsList}</ul>}
             directions= {<ol className='list-decimal'>{directionsList}</ol>}
         />
@@ -56,4 +57,4 @@ const ChileLimeSublime = () => {
     )
 };
 
-export default ChileLimeSublime;
+export default PineappleShake;

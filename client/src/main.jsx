@@ -16,6 +16,11 @@ import Drinks from './pages/Drinks';
 import Spirits from './pages/Spirits';
 import Beer from './pages/Beer';
 import ChileLimeSublime from './pages/ChileLimeSublime';
+import ChaiLax from './pages/ChaiLax';
+import TurmericTango from './pages/TurmericTango';
+import PineappleShake from './pages/PineappleShake';
+
+
 
 const router = createBrowserRouter([
   {
@@ -70,6 +75,21 @@ const router = createBrowserRouter([
       {
         path: '/chile-lime-sublime',
         element: <ChileLimeSublime />
+      },
+
+      {
+        path: '/chai-lax',
+        element: <ChaiLax />
+      },
+
+      {
+        path: '/turmeric-tango',
+        element: <TurmericTango />
+      },
+
+      {
+        path: '/pineapple-shake',
+        element: <PineappleShake />
       },
     ]
   }

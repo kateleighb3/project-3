@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import DrinkItem from '../components/DrinkItem';
 import {backgroundImage} from '../utils/constants';
-import chile from '../assets/chile-lime.webp';
+import chai from '../assets/chai-lax.webp';
 import ThoughtForm from '../components/ThoughtForm';
 import ThoughtList from '../components/ThoughtList';
 import { QUERY_THOUGHTS } from '../utils/queries';
@@ -10,18 +10,18 @@ import { useQuery } from '@apollo/client';
 
 
 
-const ChileLimeSublime = () => {
+const ChaiLax = () => {
 
     const { loading, data } = useQuery(QUERY_THOUGHTS);
     const thoughts = data?.thoughts || [];
 
-    const ingredients = ' 1 tablespoon pink peppercorns\n1 lime\n2 dried chiles de arbol, crushed\n3 cups fresh pineapple juice\n1/2 cup sugar\npinch of sea salt\n9 cups club soda, divided';
+    const ingredients = '1/2 cup sugar\n1/2 cup fresh lime juice\n8-12 oz club soda\n4 whole star anise pods\n4 lemon twists\n2 chai tea bags';
 
     const ingredientsList = ingredients.split('\n').map((ingredient, index) => (
         <li key={index}>{ingredient}</li>
       ));
 
-      const directions = 'Crush peppercorns with a mortar and pestle or the side of a chef’s knife.\n Remove zest from lime in wide strips with a vegetable peeler. Place in a bowl. Add peppercorns, whole chiles de árbol, pineapple juice, sugar, and salt and stir until most of sugar is dissolved. Transfer to a 1-qt. jar or an airtight container. Cover and chill 8–12 hours. \n Strain juice through a fine-mesh sieve into another medium bowl (you should have about 3 cups); discard solids.\nTo make 1 drink, mix ¼ cup juice with ¾ cup club soda in a measuring glass; taste and add more juice if you want it sweeter. Pour into an ice-filled glass. Garnish with a lime wedge and crushed chile de árbol.\nDo Ahead: Juice can be infused and strained 3 days ahead. Cover and chill.';
+      const directions = 'Add tea bags and 1 cup of boiling water in a bowl; cover and let sit 8-10 minutes.\nAdd sugar; stir to dissolve.\nDiscard tea bags and let cool.\nStir chai syrup and lime juice in a large jar to combine.\nDivide among 4 rocks glasses filled with ice and add 2-3 oz club soda to each. Garnish with anise pods and lemon twists.';
 
       const directionsList = directions.split('\n').map((direction, index) => (
         <li key={index}>{direction}</li>
@@ -35,8 +35,8 @@ const ChileLimeSublime = () => {
        </div> */}
        <div className = 'flex flex-row justify-center'>
         <DrinkItem 
-            img= {chile}
-            name= 'Chile Lime Sublime'
+            img= {chai}
+            name= 'Chai-lax and Enjoy'
             ingredients= {<ul className= 'list-disc'>{ingredientsList}</ul>}
             directions= {<ol className='list-decimal'>{directionsList}</ol>}
         />
@@ -56,4 +56,4 @@ const ChileLimeSublime = () => {
     )
 };
 
-export default ChileLimeSublime;
+export default ChaiLax;
