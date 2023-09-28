@@ -163,7 +163,8 @@ const Profile = () => {
   return (
     <GoogleMapsWrapper>
       <div className={`bg-cover bg-[url("./assets/${backgroundImage}")] relative h-screen w-full m-0 p-0`}>
-        <div className="m-0 p-0 flex justify-center items-center min-h-screen">
+        
+        <div className="m-0 p-0 flex flex-row justify-center items-center min-h-screen">
 
           {/* <div class="row content-none"> */}
           {/* first col */}
@@ -180,7 +181,7 @@ const Profile = () => {
                 setSelected={setSelected} setResult={setResult}
               />
               <IconButton type="submit" aria-label="search">
-                <SearchIcon style={{ fill: "green" }} />
+                <SearchIcon style={{ fill: "white" }} />
               </IconButton>
               </div>
               {details ?
