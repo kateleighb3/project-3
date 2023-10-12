@@ -61,7 +61,10 @@ const Header = () => {
             
             <>
             <div className = "bg-white border-red-500 border-4">
-              <img src = {cactus} class = "w-12 h-18"/> <div className = "font-smokum text-center text-4xl">Zero Proof</div>
+              <div className= "border-4 border-black flex justify-center items-end p-2"> 
+              <img src = {cactus} class = "w-12 h-18 text-center"/> 
+              <div className = "font-smokum text-center text-6xl">Zero Proof</div>
+              </div>
               {/* <Link className="nav-text" to="/login">
                 Login
               </Link>
