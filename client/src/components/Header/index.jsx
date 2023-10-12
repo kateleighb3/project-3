@@ -2,8 +2,10 @@ import { Link } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
 import Item from '@mui/material/ListItem';
 import Auth from '../../utils/auth';
+import cactus from '../../assets/cactus-logo.jpg';
 
 // import './index.css';
+
 
 const Header = () => {
   const logout = (event) => {
@@ -58,12 +60,15 @@ const Header = () => {
           ) : (
             
             <>
-              <Link className="nav-text" to="/login">
+            <div className = "bg-white border-red-500 border-4">
+              <img src = {cactus} class = "w-12 h-18"/> <div className = "font-smokum text-center text-4xl">Zero Proof</div>
+              {/* <Link className="nav-text" to="/login">
                 Login
               </Link>
               <Link className="nav-text" to="/signup">
                 Signup
-              </Link>
+              </Link> */}
+              </div>
             </>
           )}
         {/* </div> */}

@@ -5,6 +5,8 @@ export default {
     extend: {
       fontFamily: {
         yellow: ["Yellowtail"],
+        inika: ["Inika"],
+        smokum: ["Smokum"],
     },
   },
 },
